@@ -2,6 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import MockServer from './MockServer';
+
+
+
 
 function App() {
   return (
@@ -11,6 +15,7 @@ function App() {
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
+          <MockServer/>
         </p>
         <span>
           <span>Learn </span>
