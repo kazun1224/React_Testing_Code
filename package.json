@@ -11,7 +11,7 @@
     "@types/node": "^17.0.45",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
-    "axios": "^1.1.1",
+    "axios": "^0.27.2",
     "date-fns": "^2.29.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test  --env=jsdom --verbose",
+    "test": "react-scripts test  ",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
