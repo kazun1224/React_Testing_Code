@@ -4,6 +4,7 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 import MockServer from './MockServer';
 import Redux from './Redux';
+import ReduxAsync from './ReduxAsync';
 
 
 
@@ -18,6 +19,8 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
           <MockServer/>
           <Redux/>
+          <ReduxAsync/>
+
         </p>
         <span>
           <span>Learn </span>

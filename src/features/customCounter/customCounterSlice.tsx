@@ -20,10 +20,13 @@ const sleep = async (ms: number) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-export const fetchDummy = createAsyncThunk("fetch/dummy", async (num) => {
-  await sleep(2000);
-  return num;
-});
+export const fetchDummy = createAsyncThunk<number, number>(
+  "fetch/dummy",
+  async (num) => {
+    await sleep(2000);
+    return num;
+  }
+);
 
 export const fetchJson = createAsyncThunk("fetch/api", async () => {
   const res = await axios.get("https://jsonplaceholder.typicode.com/users/1");
@@ -80,6 +83,9 @@ export const customCounterSlice = createSlice({
     });
     builder.addCase(fetchJson.fulfilled, (state, action) => {
       state.username = action.payload;
+    });
+    builder.addCase(fetchJson.rejected, (state, action) => {
+      state.username = "anonymous";
     });
   },
 });
