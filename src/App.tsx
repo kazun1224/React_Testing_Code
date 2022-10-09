@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import MockServer from './MockServer';
+import Redux from './Redux';
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
           <MockServer/>
+          <Redux/>
         </p>
         <span>
           <span>Learn </span>
