@@ -5,6 +5,7 @@ import './App.css';
 import MockServer from './MockServer';
 import Redux from './Redux';
 import ReduxAsync from './ReduxAsync';
+import CustomHooks from './CustomHooks';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <MockServer/>
           <Redux/>
           <ReduxAsync/>
+          <CustomHooks/>
 
         </p>
         <span>
